@@ -59,9 +59,10 @@ public class OddsApiExample {
 
     public static String getJson(){
         String jsonString = null;
+        String apyKey = "";
         try {
             // Create a URL object with the API endpoint
-//            URL url = new URL("https://api.the-odds-api.com/v4/sports?apiKey=bbf16f60573467cd81b9d2b60eda2606");
+//
             URL url = new URL("http://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard");
             // Open a connection to the URL
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
